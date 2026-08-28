@@ -22,9 +22,10 @@ function initPreloader() {
   }
 }
 
-// 2. ESCENA DE APERTURA DE SOBRE Y REPRODUCCIÓN AUTOMÁTICA DE AUDIO
+// 2. ESCENA DE APERTURA DE SOBRE Y TRANSICIÓN DE PANTALLAS
 function initOpeningScene() {
   const openingScene = document.getElementById('opening-scene');
+  const invitationMain = document.getElementById('invitation-main');
   const btnAbrir = document.getElementById('btn-abrir-invitacion');
   const btnAbrirAction = document.getElementById('btn-abrir-invitacion-action');
   const audio = document.getElementById('bg-audio');
@@ -50,11 +51,21 @@ function initOpeningScene() {
     // Iniciar animación de apertura del sobre 3D
     openingScene.classList.add('is-opening');
 
+    // Transición fluida de la Pantalla 1 (Sobre) a la Pantalla 2 (Invitación Principal)
     setTimeout(() => {
-      openingScene.classList.add('fade-away');
-      setTimeout(() => {
-        openingScene.style.display = 'none';
-      }, 600);
+      if (invitationMain) {
+        invitationMain.style.display = 'block';
+        setTimeout(() => {
+          invitationMain.classList.add('fade-in-page');
+        }, 50);
+      }
+      if (openingScene) {
+        openingScene.classList.add('fade-away');
+        setTimeout(() => {
+          openingScene.style.display = 'none';
+          window.scrollTo({ top: 0, behavior: 'instant' });
+        }, 600);
+      }
     }, 1250);
   }
 

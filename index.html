@@ -76,206 +76,209 @@
     <source src="https://assets.mixkit.co/music/preview/mixkit-wedding-march-piano-686.mp3" type="audio/mpeg">
   </audio>
 
-  <!-- Portada / Hero -->
-  <header class="hero-section">
-    <div class="hero-corner-logo logo-top-left">
-      <img src="img/Logo0.png" alt="Logo Univalle">
-    </div>
-    <div class="hero-corner-logo logo-top-right">
-      <img src="img/Next.png" alt="Logo UNIVALLE NEXT+">
-    </div>
-    <div class="botanical-bg-overlay"></div>
-    <div class="botanical-leaf leaf-top-left"></div>
-    <div class="botanical-leaf leaf-top-right"></div>
-    <div class="botanical-leaf leaf-bottom-left"></div>
-    <div class="botanical-leaf leaf-bottom-right"></div>
-
-    <div class="hero-content">
-      <span class="hero-date">MARTES 01 . 09 . 2026</span>
-      <h1 class="hero-title">UNIVALLE <span class="next-highlight">NEXT+</span></h1>
-      <p class="hero-slogan">LA RESPUESTA CIENTÍFICA AL FUTURO</p>
-      <div class="divider-line"></div>
-      <blockquote class="hero-quote">
-        "Presentación oficial de nuestro nuevo ecosistema digital de educación en el marco del Modelo Académico Univalle."
-      </blockquote>
-      <div class="scroll-down-arrow">
-        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M7 10l5 5 5-5"/>
-        </svg>
+  <!-- Contenedor de la Invitación Principal (Pantalla 2) -->
+  <div id="invitation-main" class="invitation-main" style="display: none;">
+    <!-- Portada / Hero -->
+    <header class="hero-section">
+      <div class="hero-corner-logo logo-top-left">
+        <img src="img/Logo0.png" alt="Logo Univalle">
       </div>
-    </div>
-  </header>
+      <div class="hero-corner-logo logo-top-right">
+        <img src="img/Next.png" alt="Logo UNIVALLE NEXT+">
+      </div>
+      <div class="botanical-bg-overlay"></div>
+      <div class="botanical-leaf leaf-top-left"></div>
+      <div class="botanical-leaf leaf-top-right"></div>
+      <div class="botanical-leaf leaf-bottom-left"></div>
+      <div class="botanical-leaf leaf-bottom-right"></div>
 
-  <!-- Cuenta Regresiva -->
-  <section class="countdown-section">
-    <div class="container">
-      <div class="countdown-card">
-        <div class="countdown-logo-container">
-          <img src="img/Logo0.png" alt="Logo Univalle" class="countdown-logo">
-        </div>
-        <div class="countdown-header">
-          <span class="sub-tag">Falta poco para la presentación</span>
-          <h2>Cuenta Regresiva</h2>
-        </div>
-        <div class="countdown-grid" id="countdown">
-          <div class="time-box">
-            <span id="days" class="number">00</span>
-            <span class="label">Días</span>
-          </div>
-          <div class="time-separator">:</div>
-          <div class="time-box">
-            <span id="hours" class="number">00</span>
-            <span class="label">Horas</span>
-          </div>
-          <div class="time-separator">:</div>
-          <div class="time-box">
-            <span id="minutes" class="number">00</span>
-            <span class="label">Minutos</span>
-          </div>
-          <div class="time-separator">:</div>
-          <div class="time-box">
-            <span id="seconds" class="number">00</span>
-            <span class="label">Segundos</span>
-          </div>
-        </div>
-        <div class="heart-pulse">
-          <svg viewBox="0 0 24 24" width="26" height="26" fill="#730034"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      <div class="hero-content">
+        <span class="hero-date">MARTES 01 . 09 . 2026</span>
+        <h1 class="hero-title">UNIVALLE <span class="next-highlight">NEXT+</span></h1>
+        <p class="hero-slogan">LA RESPUESTA CIENTÍFICA AL FUTURO</p>
+        <div class="divider-line"></div>
+        <blockquote class="hero-quote">
+          "Presentación oficial de nuestro nuevo ecosistema digital de educación en el marco del Modelo Académico Univalle."
+        </blockquote>
+        <div class="scroll-down-arrow">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 10l5 5 5-5"/>
+          </svg>
         </div>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Tarjeta de Invitación Oficial -->
-  <section class="guests-section">
-    <div class="container">
-      <div class="guests-card">
-        <div class="badge-passes">UNIVERSIDAD PRIVADA DEL VALLE</div>
-        <h3 class="guests-title">INVITACIÓN ESPECIAL</h3>
-        <p class="invitation-text-body">
-          La <strong>Universidad Privada del Valle</strong>, en el marco de su Modelo Académico, tiene el honor de invitarle cordialmente a la presentación oficial de la plataforma <strong>UNIVALLE NEXT+</strong>, nuestro innovador ecosistema digital de educación que se implementa formalmente a partir de la gestión 2026 para beneficio de estudiantes, profesionales y nuestra sociedad.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Detalles del Evento -->
-  <section class="events-section">
-    <div class="container">
-      <div class="section-title text-center">
-        <span class="sub-tag">Lugar y Horario</span>
-        <h2>Detalles del Evento</h2>
-      </div>
-
-      <div class="events-grid" style="grid-template-columns: 1fr; max-width: 650px; margin: 0 auto;">
-        <!-- Presentación Oficial -->
-        <div class="event-card">
-          <div class="event-icon">
-            <svg viewBox="0 0 64 64" width="54" height="54" fill="none" stroke="#730034" stroke-width="2">
-              <rect x="8" y="12" width="48" height="34" rx="4"/>
-              <path d="M24 46l-4 10h24l-4-10"/>
-              <path d="M28 24l10 5-10 5v-10z" fill="#D4AF37" stroke="none"/>
-            </svg>
+    <!-- Cuenta Regresiva -->
+    <section class="countdown-section">
+      <div class="container">
+        <div class="countdown-card">
+          <div class="countdown-logo-container">
+            <img src="img/Logo0.png" alt="Logo Univalle" class="countdown-logo">
           </div>
-          <h3>Presentación Oficial UNIVALLE NEXT+</h3>
-          <div class="event-details">
-            <p class="event-date"><strong>📅 Fecha:</strong> Martes 01 de Septiembre de 2026</p>
-            <p class="event-date"><strong>🕖 Hora:</strong> 19:00 hs (Registro 18:45 hs)</p>
-            <p class="event-place"><strong>📍 Lugar:</strong> Torre Académica América</p>
-            <p class="event-address">Auditorio Gonzalo Ruiz — Univalle</p>
+          <div class="countdown-header">
+            <span class="sub-tag">Falta poco para la presentación</span>
+            <h2>Cuenta Regresiva</h2>
           </div>
-          <div class="event-actions">
-            <button class="btn btn-sm btn-primary" onclick="openCalendarModal('Presentacion UNIVALLE NEXT+', '2026-09-01T19:00:00', 'Torre Academica America - Auditorio Gonzalo Ruiz')">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
-              Agendar en Google Calendar
-            </button>
-            <a href="https://maps.google.com/?q=Torre+Academica+America+Univalle+Cochabamba" target="_blank" class="btn btn-sm btn-outline">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              Abrir en Google Maps
-            </a>
+          <div class="countdown-grid" id="countdown">
+            <div class="time-box">
+              <span id="days" class="number">00</span>
+              <span class="label">Días</span>
+            </div>
+            <div class="time-separator">:</div>
+            <div class="time-box">
+              <span id="hours" class="number">00</span>
+              <span class="label">Horas</span>
+            </div>
+            <div class="time-separator">:</div>
+            <div class="time-box">
+              <span id="minutes" class="number">00</span>
+              <span class="label">Minutos</span>
+            </div>
+            <div class="time-separator">:</div>
+            <div class="time-box">
+              <span id="seconds" class="number">00</span>
+              <span class="label">Segundos</span>
+            </div>
           </div>
-
-          <!-- Mapa Interactivo Embebido -->
-          <div class="event-map-container">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.8284813580544!2d-66.1583006!3d-17.3719005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e3740e53a35a11%3A0xb6975a5e305e7e0d!2sTorre%20Acad%C3%A9mica%20Am%C3%A9rica%20-%20Univalle!5e0!3m2!1ses!2sbo!4v1700000000000!5m2!1ses!2sbo" 
-              width="100%" 
-              height="300" 
-              style="border:0;" 
-              allowfullscreen="" 
-              loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+          <div class="heart-pulse">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="#730034"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Banner RSVP -->
-  <section class="rsvp-banner-section">
-    <div class="container text-center">
-      <h2>Confirmar Asistencia</h2>
-      <p>Favor confirmar su asistencia para la asignación de su espacio institucional.</p>
-      <button class="btn btn-gold btn-lg" onclick="openModal('modal-rsvp')">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-        Confirmar Asistencia Aquí
-      </button>
-    </div>
-  </section>
-
-  <!-- Características del Ecosistema NEXT+ -->
-  <section class="party-features-section">
-    <div class="container text-center">
-      <span class="sub-tag">Innovación & Educación</span>
-      <h2>Ecosistema Digital UNIVALLE NEXT+</h2>
-      <p class="features-sub">Conoce los pilares del evento de presentación oficial:</p>
-
-      <div class="features-grid">
-        <!-- Modelo Académico -->
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#730034" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-          </div>
-          <h3>Modelo Académico</h3>
-          <p>Innovación tecnológica orientada a generar nuevas oportunidades para estudiantes y profesionales.</p>
-          <button class="btn btn-sm btn-outline" onclick="openModal('modal-modelo')">Más información</button>
-        </div>
-
-        <!-- Dress Code -->
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#730034" stroke-width="2"><path d="M20.38 3.46L16 2a4 4 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.47a1 1 0 00.99.84H6v10a2 2 0 002 2h8a2 2 0 002-2V10h2.15a1 1 0 00.99-.84l.58-3.47a2 2 0 00-1.34-2.23z"/></svg>
-          </div>
-          <h3>Código de Vestimenta</h3>
-          <p>Indumentaria sugerida para autoridades, docentes e invitados especiales al acto académico.</p>
-          <button class="btn btn-sm btn-outline" onclick="openModal('modal-dresscode')">Ver Código de Vestimenta</button>
-        </div>
-
-        <!-- Programa del Evento -->
-        <div class="feature-card">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#730034" stroke-width="2"><path d="M12 2a7 7 0 00-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 00-7-7zM9 21h6"/></svg>
-          </div>
-          <h3>Programa del Acto</h3>
-          <p>Presentación técnica, demostración interactiva de la plataforma y vino de honor.</p>
-          <button class="btn btn-sm btn-outline" onclick="openModal('modal-programa')">Ver Programa</button>
+    <!-- Tarjeta de Invitación Oficial -->
+    <section class="guests-section">
+      <div class="container">
+        <div class="guests-card">
+          <div class="badge-passes">UNIVERSIDAD PRIVADA DEL VALLE</div>
+          <h3 class="guests-title">INVITACIÓN ESPECIAL</h3>
+          <p class="invitation-text-body">
+            La <strong>Universidad Privada del Valle</strong>, en el marco de su Modelo Académico, tiene el honor de invitarle cordialmente a la presentación oficial de la plataforma <strong>UNIVALLE NEXT+</strong>, nuestro innovador ecosistema digital de educación que se implementa formalmente a partir de la gestión 2026 para beneficio de estudiantes, profesionales y nuestra sociedad.
+          </p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer Institucional -->
-  <footer class="main-footer text-center">
-    <div class="container">
-      <p class="footer-names">UNIVALLE NEXT+</p>
-      <p class="footer-copy">LA RESPUESTA CIENTÍFICA AL FUTURO</p>
-      <div class="footer-dev-credit">
-        <p>Desarrollado por la <strong>Facultad de Informática y Electrónica (Sede Cochabamba)</strong></p>
-        <p class="dev-author">Ing. Christian Max Montaño Salvatierra</p>
+    <!-- Detalles del Evento -->
+    <section class="events-section">
+      <div class="container">
+        <div class="section-title text-center">
+          <span class="sub-tag">Lugar y Horario</span>
+          <h2>Detalles del Evento</h2>
+        </div>
+
+        <div class="events-grid" style="grid-template-columns: 1fr; max-width: 650px; margin: 0 auto;">
+          <!-- Presentación Oficial -->
+          <div class="event-card">
+            <div class="event-icon">
+              <svg viewBox="0 0 64 64" width="54" height="54" fill="none" stroke="#730034" stroke-width="2">
+                <rect x="8" y="12" width="48" height="34" rx="4"/>
+                <path d="M24 46l-4 10h24l-4-10"/>
+                <path d="M28 24l10 5-10 5v-10z" fill="#D4AF37" stroke="none"/>
+              </svg>
+            </div>
+            <h3>Presentación Oficial UNIVALLE NEXT+</h3>
+            <div class="event-details">
+              <p class="event-date"><strong>📅 Fecha:</strong> Martes 01 de Septiembre de 2026</p>
+              <p class="event-date"><strong>🕖 Hora:</strong> 19:00 hs (Registro 18:45 hs)</p>
+              <p class="event-place"><strong>📍 Lugar:</strong> Torre Académica América</p>
+              <p class="event-address">Auditorio Gonzalo Ruiz — Univalle</p>
+            </div>
+            <div class="event-actions">
+              <button class="btn btn-sm btn-primary" onclick="openCalendarModal('Presentacion UNIVALLE NEXT+', '2026-09-01T19:00:00', 'Torre Academica America - Auditorio Gonzalo Ruiz')">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+                Agendar en Google Calendar
+              </button>
+              <a href="https://maps.google.com/?q=Torre+Academica+America+Univalle+Cochabamba" target="_blank" class="btn btn-sm btn-outline">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Abrir en Google Maps
+              </a>
+            </div>
+
+            <!-- Mapa Interactivo Embebido -->
+            <div class="event-map-container">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.8284813580544!2d-66.1583006!3d-17.3719005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e3740e53a35a11%3A0xb6975a5e305e7e0d!2sTorre%20Acad%C3%A9mica%20Am%C3%A9rica%20-%20Univalle!5e0!3m2!1ses!2sbo!4v1700000000000!5m2!1ses!2sbo" 
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+        </div>
       </div>
-      <small>© 2026 Universidad Privada del Valle • Todos los derechos reservados</small>
-    </div>
-  </footer>
+    </section>
+
+    <!-- Banner RSVP -->
+    <section class="rsvp-banner-section">
+      <div class="container text-center">
+        <h2>Confirmar Asistencia</h2>
+        <p>Favor confirmar su asistencia para la asignación de su espacio institucional.</p>
+        <button class="btn btn-gold btn-lg" onclick="openModal('modal-rsvp')">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+          Confirmar Asistencia Aquí
+        </button>
+      </div>
+    </section>
+
+    <!-- Características del Ecosistema NEXT+ -->
+    <section class="party-features-section">
+      <div class="container text-center">
+        <span class="sub-tag">Innovación & Educación</span>
+        <h2>Ecosistema Digital UNIVALLE NEXT+</h2>
+        <p class="features-sub">Conoce los pilares del evento de presentación oficial:</p>
+
+        <div class="features-grid">
+          <!-- Modelo Académico -->
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#730034" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>Modelo Académico</h3>
+            <p>Innovación tecnológica orientada a generar nuevas oportunidades para estudiantes y profesionales.</p>
+            <button class="btn btn-sm btn-outline" onclick="openModal('modal-modelo')">Más información</button>
+          </div>
+
+          <!-- Dress Code -->
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#730034" stroke-width="2"><path d="M20.38 3.46L16 2a4 4 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.47a1 1 0 00.99.84H6v10a2 2 0 002 2h8a2 2 0 002-2V10h2.15a1 1 0 00.99-.84l.58-3.47a2 2 0 00-1.34-2.23z"/></svg>
+            </div>
+            <h3>Código de Vestimenta</h3>
+            <p>Indumentaria sugerida para autoridades, docentes e invitados especiales al acto académico.</p>
+            <button class="btn btn-sm btn-outline" onclick="openModal('modal-dresscode')">Ver Código de Vestimenta</button>
+          </div>
+
+          <!-- Programa del Evento -->
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#730034" stroke-width="2"><path d="M12 2a7 7 0 00-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 00-7-7zM9 21h6"/></svg>
+            </div>
+            <h3>Programa del Acto</h3>
+            <p>Presentación técnica, demostración interactiva de la plataforma y vino de honor.</p>
+            <button class="btn btn-sm btn-outline" onclick="openModal('modal-programa')">Ver Programa</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Institucional -->
+    <footer class="main-footer text-center">
+      <div class="container">
+        <p class="footer-names">UNIVALLE NEXT+</p>
+        <p class="footer-copy">LA RESPUESTA CIENTÍFICA AL FUTURO</p>
+        <div class="footer-dev-credit">
+          <p>Desarrollado por la <strong>Facultad de Informática y Electrónica (Sede Cochabamba)</strong></p>
+          <p class="dev-author">Ing. Christian Max Montaño Salvatierra</p>
+        </div>
+        <small>© 2026 Universidad Privada del Valle • Todos los derechos reservados</small>
+      </div>
+    </footer>
+  </div>
 
   <!-- MODALES -->
 
