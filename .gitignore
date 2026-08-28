@@ -1,3 +1,7 @@
+# Ignore React folder and unused folders
+React/
+Html/
+
 # Node dependencies
 node_modules/
 npm-debug.log*
