@@ -51,22 +51,15 @@ function initOpeningScene() {
     // Iniciar animación de apertura del sobre 3D
     openingScene.classList.add('is-opening');
 
-    // Transición fluida de la Pantalla 1 (Sobre) a la Pantalla 2 (Invitación Principal)
+    // Desvanecer la pantalla de bienvenida y revelar la invitación principal justo debajo
     setTimeout(() => {
-      if (invitationMain) {
-        invitationMain.style.display = 'block';
-        setTimeout(() => {
-          invitationMain.classList.add('fade-in-page');
-        }, 50);
-      }
       if (openingScene) {
         openingScene.classList.add('fade-away');
         setTimeout(() => {
           openingScene.style.display = 'none';
-          window.scrollTo({ top: 0, behavior: 'instant' });
         }, 600);
       }
-    }, 1250);
+    }, 1100);
   }
 
   if (btnAbrir) btnAbrir.addEventListener('click', handleOpen);

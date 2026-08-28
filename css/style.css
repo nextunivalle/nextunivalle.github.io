@@ -163,32 +163,35 @@ h1, h2, h3, h4 {
 }
 
 /* ==========================================================================
-   ESCENA DE APERTURA "ESTÁS INVITADO" (PANTALLA 1 INDEPENDIENTE)
+   ESCENA DE APERTURA "ESTÁS INVITADO" (PANTALLA DE ENTRADA CON SOBRE)
    ========================================================================== */
 .opening-scene {
-  position: relative;
-  min-height: 100vh;
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
   width: 100%;
-  z-index: 10;
+  height: 100vh;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 40px 20px;
   text-align: center;
-  background: linear-gradient(135deg, rgba(250, 245, 247, 0.98) 0%, rgba(242, 230, 236, 0.98) 100%), repeating-linear-gradient(90deg, transparent 0 59px, rgba(115, 0, 52, 0.03) 60px);
+  background: linear-gradient(135deg, rgba(250, 245, 247, 0.99) 0%, rgba(242, 230, 236, 0.99) 100%), repeating-linear-gradient(90deg, transparent 0 59px, rgba(115, 0, 52, 0.03) 60px);
   transition: opacity 0.6s ease, transform 0.6s ease, visibility 0.6s ease;
 }
 
 .opening-scene.fade-away {
   opacity: 0;
   visibility: hidden;
-  transform: scale(1.03);
+  pointer-events: none;
+  transform: scale(1.04);
 }
 
 .invitation-main {
-  opacity: 0;
-  transition: opacity 0.8s ease;
+  position: relative;
+  z-index: 1;
 }
 
 .invitation-main.fade-in-page {
