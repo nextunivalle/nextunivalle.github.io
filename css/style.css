@@ -163,6 +163,246 @@ h1, h2, h3, h4 {
 }
 
 /* ==========================================================================
+   ESCENA DE APERTURA "ESTÁS INVITADO" (SOBRE 3D UNIVALLE NEXT+)
+   ========================================================================== */
+.opening-scene {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(250, 245, 247, 0.98) 0%, rgba(242, 230, 236, 0.98) 100%), repeating-linear-gradient(90deg, transparent 0 59px, rgba(115, 0, 52, 0.03) 60px);
+  transition: opacity 0.6s ease, transform 0.6s ease, visibility 0.6s ease;
+}
+
+.opening-scene.fade-away {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.03);
+}
+
+.opening-brand {
+  position: absolute;
+  top: 25px;
+  z-index: 10;
+}
+
+.opening-brand.logo-left { left: 25px; }
+.opening-brand.logo-right { right: 25px; }
+
+.opening-brand.logo-left img { height: 110px; width: auto; object-fit: contain; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.15)); }
+.opening-brand.logo-right img { height: 80px; width: auto; object-fit: contain; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.15)); }
+
+.opening-copy {
+  max-width: 580px;
+  margin-bottom: 25px;
+  animation: fadeUp 0.8s both;
+}
+
+.eyebrow {
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-size: 0.8rem;
+  font-weight: 800;
+  font-family: var(--font-body);
+}
+
+.opening-title {
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 7vw, 5.2rem);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 10px 0 12px;
+  line-height: 1;
+}
+
+.opening-sub {
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.envelope-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.envelope {
+  width: min(85vw, 400px);
+  aspect-ratio: 1.55;
+  border: 0;
+  background: transparent;
+  position: relative;
+  perspective: 1100px;
+  filter: drop-shadow(0 20px 30px rgba(115, 0, 52, 0.2));
+  transition: transform 0.3s ease;
+}
+
+.envelope:hover {
+  transform: scale(1.03);
+}
+
+.envelope > span, .envelope > div {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.envelope-back {
+  background: #E8D9E1;
+  border-radius: 6px;
+}
+
+.invitation-peek {
+  inset: 11% 10% 5% !important;
+  background: linear-gradient(135deg, #ffffff 0%, #FAF0F4 100%);
+  border-radius: 4px;
+  z-index: 1;
+  color: var(--color-primary);
+  padding: 25px 20px;
+  transform: translateY(17%);
+  transition: transform 0.8s 0.25s cubic-bezier(0.16, 0.84, 0.3, 1);
+  box-shadow: 0 10px 30px rgba(115, 0, 52, 0.1);
+  border: 1px solid rgba(115, 0, 52, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.invitation-card-logo {
+  display: block;
+  width: min(100%, 200px);
+  height: 50px;
+  margin: 0 auto 12px;
+  object-fit: contain;
+}
+
+.peek-date {
+  font-family: var(--font-heading);
+  letter-spacing: 0.2em;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.envelope-front {
+  clip-path: polygon(0 0, 50% 47%, 100% 0, 100% 100%, 0 100%);
+  background: linear-gradient(145deg, #F3E8EE, #E6D3DC);
+  z-index: 3;
+  border-radius: 6px;
+}
+
+.envelope-left {
+  clip-path: polygon(0 0, 54% 55%, 0 100%);
+  background: #ECDCE4;
+  z-index: 4;
+  border-radius: 6px 0 0 6px;
+}
+
+.envelope-right {
+  clip-path: polygon(100% 0, 46% 55%, 100% 100%);
+  background: #DFCDD7;
+  z-index: 4;
+  border-radius: 0 6px 6px 0;
+}
+
+.envelope-flap {
+  clip-path: polygon(0 0, 100% 0, 50% 60%);
+  background: linear-gradient(180deg, #F5EBF0, #E6D5DF);
+  transform-origin: top;
+  z-index: 6;
+  transition: transform 0.75s cubic-bezier(0.24, 0.73, 0.22, 1), z-index 0s 0.4s;
+  backface-visibility: hidden;
+}
+
+.seal {
+  width: 58px !important;
+  height: 58px !important;
+  inset: 43% auto auto 50% !important;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  color: #ffffff;
+  z-index: 7;
+  display: grid !important;
+  place-items: center;
+  font: 700 2.2rem var(--font-body);
+  box-shadow: 0 6px 18px rgba(115, 0, 52, 0.35), inset 0 0 0 4px rgba(255, 255, 255, 0.2);
+  transition: opacity 0.25s, transform 0.45s;
+}
+
+.btn-abrir-action {
+  margin-top: 30px;
+  border: 1.5px solid var(--color-primary);
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  border-radius: 50px;
+  padding: 14px 32px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 10px 25px rgba(115, 0, 52, 0.25);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-abrir-action:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(115, 0, 52, 0.38);
+}
+
+.tap-hint {
+  margin-top: 12px;
+  color: var(--color-text-muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* ANIMACIONES DE APERTURA DEL SOBRE */
+.is-opening .envelope-flap {
+  transform: rotateX(180deg);
+  z-index: 0;
+}
+
+.is-opening .seal {
+  opacity: 0;
+  transform: translate(-50%, -80%) scale(0.75);
+}
+
+.is-opening .invitation-peek {
+  transform: translateY(-52%);
+}
+
+.is-opening .opening-copy, .is-opening .opening-brand, .is-opening .btn-abrir-action, .is-opening .tap-hint {
+  animation: fadeOut 0.4s 0.6s both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+  to { opacity: 0; transform: translateY(-10px); }
+}
+
+/* ==========================================================================
    CONTROL FLOTANTE DE AUDIO
    ========================================================================== */
 .floating-audio {

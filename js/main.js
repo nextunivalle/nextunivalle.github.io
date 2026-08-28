@@ -5,6 +5,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   initPreloader();
   initAudio();
+  initOpeningScene();
   initCountdown();
 });
 
@@ -15,11 +16,50 @@ function initPreloader() {
     window.addEventListener('load', () => {
       preloader.classList.add('fade-out');
     });
-    // Fallback por si tarda en cargar recursos
     setTimeout(() => {
       preloader.classList.add('fade-out');
     }, 2000);
   }
+}
+
+// 2. ESCENA DE APERTURA DE SOBRE Y REPRODUCCIÓN AUTOMÁTICA DE AUDIO
+function initOpeningScene() {
+  const openingScene = document.getElementById('opening-scene');
+  const btnAbrir = document.getElementById('btn-abrir-invitacion');
+  const btnAbrirAction = document.getElementById('btn-abrir-invitacion-action');
+  const audio = document.getElementById('bg-audio');
+
+  let opened = false;
+
+  function handleOpen(e) {
+    if (e) e.preventDefault();
+    if (opened || !openingScene) return;
+    opened = true;
+
+    // Reproducción inmediata de audio tras la interacción del usuario
+    if (audio) {
+      audio.volume = 0.6;
+      audio.play().then(() => {
+        audioPlaying = true;
+        updateAudioUI();
+      }).catch(err => {
+        console.warn('El navegador requirió interacción adicional para el audio:', err);
+      });
+    }
+
+    // Iniciar animación de apertura del sobre 3D
+    openingScene.classList.add('is-opening');
+
+    setTimeout(() => {
+      openingScene.classList.add('fade-away');
+      setTimeout(() => {
+        openingScene.style.display = 'none';
+      }, 600);
+    }, 1250);
+  }
+
+  if (btnAbrir) btnAbrir.addEventListener('click', handleOpen);
+  if (btnAbrirAction) btnAbrirAction.addEventListener('click', handleOpen);
 }
 
 // 2. CONTROL DE AUDIO DE FONDO
