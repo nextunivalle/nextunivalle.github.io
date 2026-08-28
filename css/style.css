@@ -254,16 +254,23 @@ h1, h2, h3, h4 {
 }
 
 .hero-corner-logo img {
-  height: 105px;
   width: auto;
   object-fit: contain;
-  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.45));
+  filter: drop-shadow(0 4px 14px rgba(0, 0, 0, 0.5));
   transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo-top-left img {
+  height: 165px;
+}
+
+.logo-top-right img {
+  height: 115px;
 }
 
 .hero-corner-logo img:hover {
   transform: scale(1.08);
-  filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.6));
+  filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.65));
 }
 
 .botanical-leaf {
@@ -868,7 +875,8 @@ section {
   .hero-corner-logo { top: 15px; }
   .logo-top-left { left: 15px; }
   .logo-top-right { right: 15px; }
-  .hero-corner-logo img { height: 65px; }
+  .logo-top-left img { height: 95px; }
+  .logo-top-right img { height: 75px; }
   .hero-title { font-size: 2.8rem; }
   .hero-title .next-highlight { font-size: 3rem; }
   .hero-slogan { font-size: 0.85rem; letter-spacing: 2px; }
