@@ -61,7 +61,7 @@
 
     <button id="btn-abrir-invitacion-action" class="btn-abrir-action">
       <span>Ingresar al Ecosistema</span>
-      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      <svg class="animated-btn-arrow" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
     </button>
     <p class="tap-hint">Toca el portal 3D o el botón para ingresar con audio</p>
   </div>
@@ -151,8 +151,15 @@
               <span class="label">Segundos</span>
             </div>
           </div>
-          <div class="heart-pulse">
-            <svg viewBox="0 0 24 24" width="26" height="26" fill="#682FA0"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          <div class="heart-pulse lottie-countdown-icon">
+            <lottie-player 
+              src="https://lottie.host/06648d12-acd7-4966-bcd1-a459c85536e8/MEjQduhw9H.json" 
+              background="transparent" 
+              speed="1" 
+              style="width: 75px; height: 75px; margin: 0 auto;" 
+              loop 
+              autoplay>
+            </lottie-player>
           </div>
         </div>
       </div>
@@ -182,12 +189,15 @@
         <div class="events-grid" style="grid-template-columns: 1fr; max-width: 650px; margin: 0 auto;">
           <!-- Presentación Oficial -->
           <div class="event-card">
-            <div class="event-icon">
-              <svg viewBox="0 0 64 64" width="54" height="54" fill="none" stroke="#682FA0" stroke-width="2">
-                <rect x="8" y="12" width="48" height="34" rx="4"/>
-                <path d="M24 46l-4 10h24l-4-10"/>
-                <path d="M28 24l10 5-10 5v-10z" fill="#682FA0" stroke="none"/>
-              </svg>
+            <div class="event-icon lottie-event-icon">
+              <lottie-player 
+                src="https://lottie.host/b982a784-8975-411f-bcde-af71eaf2d3f0/uUynT4kEFP.json" 
+                background="transparent" 
+                speed="1" 
+                style="width: 170px; height: 140px;" 
+                loop 
+                autoplay>
+              </lottie-player>
             </div>
             <h3>Presentación Oficial <img src="img/Next.png" alt="UNIVALLE NEXT+" class="event-title-logo"></h3>
             <div class="event-details">
@@ -232,12 +242,19 @@
           <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
           CONFIRMACIÓN DE ASISTENCIA
         </span>
-        <h2 class="rsvp-title">Reserva tu Lugar Institucional</h2>
+        <h2 class="rsvp-title">Reserva tu Lugar</h2>
         <p class="rsvp-desc">
           Por favor confirme su participación para la asignación formal de su lugar reservado en la presentación oficial de <strong>UNIVALLE <span class="brand-next" style="color: #E2E2E2;">NEXT</span><span class="brand-plus" style="color: #D69FFF;">+</span></strong>.
         </p>
         <button class="btn btn-rsvp-action" onclick="openModal('modal-rsvp')">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+          <lottie-player 
+            src="https://lottie.host/a2cf3e7f-cc79-410d-8907-fa0b4c5684a0/0g7HybD7Gr.json" 
+            background="transparent" 
+            speed="1" 
+            style="width: 38px; height: 38px;" 
+            loop 
+            autoplay>
+          </lottie-player>
           <span>Confirmar Asistencia Aquí</span>
         </button>
       </div>

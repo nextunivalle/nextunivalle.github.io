@@ -521,6 +521,17 @@ h4 {
   box-shadow: 0 14px 30px rgba(104, 47, 160, 0.45);
 }
 
+.animated-btn-arrow {
+  animation: arrowSlideHorizontal 1.5s ease-in-out infinite;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@keyframes arrowSlideHorizontal {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(6px); }
+}
+
 .tap-hint {
   margin-top: 12px;
   color: var(--color-text-muted);
@@ -970,14 +981,20 @@ section {
   font-weight: 800;
 }
 
-.heart-pulse {
-  margin-top: 30px;
-  animation: pulse 1.5s infinite;
+.lottie-countdown-icon {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.heart-pulse svg {
-  fill: var(--color-plus);
-  filter: drop-shadow(0 4px 10px rgba(104, 47, 160, 0.35));
+.lottie-countdown-icon lottie-player {
+  filter: drop-shadow(0 4px 15px rgba(104, 47, 160, 0.45));
+  transition: transform 0.3s ease;
+}
+
+.lottie-countdown-icon:hover lottie-player {
+  transform: scale(1.12);
 }
 
 @keyframes pulse {
@@ -1066,17 +1083,30 @@ section {
   box-shadow: 0 25px 55px rgba(104, 47, 160, 0.22);
 }
 
-.event-icon {
-  margin: 0 auto 20px;
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, rgba(104, 47, 160, 0.12) 0%, rgba(115, 0, 52, 0.08) 100%);
+.event-icon.lottie-event-icon {
+  margin: -10px auto 5px;
+  width: 100%;
+  max-width: 200px;
+  height: 90px;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(104, 47, 160, 0.2);
-  box-shadow: 0 6px 18px rgba(104, 47, 160, 0.15);
+  overflow: hidden;
+  position: relative;
+}
+
+.event-icon.lottie-event-icon lottie-player {
+  transform: scale(1.65);
+  transform-origin: center center;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover .event-icon.lottie-event-icon lottie-player {
+  transform: scale(1.8);
 }
 
 .event-card h3 {
@@ -1263,9 +1293,13 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
-.btn-rsvp-action svg {
-  color: var(--color-plus);
+.btn-rsvp-action lottie-player {
   transition: transform 0.3s ease;
+  filter: drop-shadow(0 2px 8px rgba(104, 47, 160, 0.3));
+}
+
+.btn-rsvp-action:hover lottie-player {
+  transform: scale(1.18);
 }
 
 .btn-rsvp-action:hover {
