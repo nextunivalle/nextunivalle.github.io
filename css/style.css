@@ -241,12 +241,19 @@ h1, h2, h3, h4 {
 .hero-corner-logo {
   position: absolute;
   top: 24px;
-  left: 28px;
   z-index: 10;
 }
 
+.logo-top-left {
+  left: 28px;
+}
+
+.logo-top-right {
+  right: 28px;
+}
+
 .hero-corner-logo img {
-  height: 55px;
+  height: 58px;
   width: auto;
   object-fit: contain;
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4));
