@@ -138,9 +138,9 @@ function updateAudioUI() {
   }
 }
 
-// 3. CUENTA REGRESIVA (Martes 01 de Septiembre de 2026 - 19:00 hs)
+// 3. CUENTA REGRESIVA (Miércoles 16 de Septiembre de 2026 - 19:00 hs)
 function initCountdown() {
-  const targetDate = new Date('2026-09-01T19:00:00').getTime();
+  const targetDate = new Date('2026-09-16T19:00:00').getTime();
 
   function updateTimer() {
     const now = new Date().getTime();
@@ -216,7 +216,7 @@ function handleRSVPSubmit(e) {
   if (mensaje) textoWhatsApp += `📝 *Mensaje:* ${mensaje}\n`;
 
   // Número de WhatsApp para confirmaciones (Ing. Christian Max Montaño)
-  const phone = '59175949161';
+  const phone = '59179957137';
   const url = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(textoWhatsApp)}`;
 
   window.open(url, '_blank');
