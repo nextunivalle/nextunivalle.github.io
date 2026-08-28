@@ -501,11 +501,11 @@ h1, h2, h3, h4 {
 }
 
 .logo-top-left img {
-  height: 165px;
+  height: 120px;
 }
 
 .logo-top-right img {
-  height: 115px;
+  height: 85px;
 }
 
 .hero-corner-logo img:hover {
@@ -1112,13 +1112,14 @@ section {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .hero-corner-logo { top: 15px; }
-  .logo-top-left { left: 15px; }
-  .logo-top-right { right: 15px; }
-  .logo-top-left img { height: 95px; }
-  .logo-top-right img { height: 75px; }
-  .hero-title { font-size: 2.8rem; }
-  .hero-title .next-highlight { font-size: 3rem; }
+  .hero-corner-logo { top: 12px; }
+  .logo-top-left { left: 12px; }
+  .logo-top-right { right: 12px; }
+  .logo-top-left img { height: 55px; }
+  .logo-top-right img { height: 45px; }
+  .hero-content { padding-top: 60px; }
+  .hero-title { font-size: 2.6rem; }
+  .hero-title .next-highlight { font-size: 2.8rem; }
   .hero-slogan { font-size: 0.85rem; letter-spacing: 2px; }
   .section-title h2 { font-size: 2.2rem; }
   .time-box .number { font-size: 2.4rem; }
