@@ -241,28 +241,29 @@ h1, h2, h3, h4 {
 
 .hero-corner-logo {
   position: absolute;
-  top: 24px;
+  top: 20px;
   z-index: 10;
 }
 
 .logo-top-left {
-  left: 28px;
+  left: 30px;
 }
 
 .logo-top-right {
-  right: 28px;
+  right: 30px;
 }
 
 .hero-corner-logo img {
-  height: 58px;
+  height: 105px;
   width: auto;
   object-fit: contain;
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4));
-  transition: transform 0.3s ease;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.45));
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .hero-corner-logo img:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
+  filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.6));
 }
 
 .botanical-leaf {
@@ -864,8 +865,12 @@ section {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+  .hero-corner-logo { top: 15px; }
+  .logo-top-left { left: 15px; }
+  .logo-top-right { right: 15px; }
+  .hero-corner-logo img { height: 65px; }
   .hero-title { font-size: 2.8rem; }
-  .hero-title .ampersand { font-size: 2.5rem; }
+  .hero-title .next-highlight { font-size: 3rem; }
   .hero-slogan { font-size: 0.85rem; letter-spacing: 2px; }
   .section-title h2 { font-size: 2.2rem; }
   .time-box .number { font-size: 2.4rem; }
