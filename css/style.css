@@ -206,18 +206,19 @@ h1, h2, h3, h4 {
 
 .opening-brand {
   position: absolute;
-  top: 25px;
+  top: 18px;
   z-index: 10;
 }
 
-.opening-brand.logo-left { left: 25px; }
-.opening-brand.logo-right { right: 25px; }
+.opening-brand.logo-left { left: 20px; }
+.opening-brand.logo-right { right: 20px; }
 
-.opening-brand.logo-left img { height: 110px; width: auto; object-fit: contain; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.15)); }
-.opening-brand.logo-right img { height: 80px; width: auto; object-fit: contain; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.15)); }
+.opening-brand.logo-left img { height: 70px; width: auto; object-fit: contain; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.15)); }
+.opening-brand.logo-right img { height: 50px; width: auto; object-fit: contain; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.15)); }
 
 .opening-copy {
   max-width: 580px;
+  margin-top: 40px;
   margin-bottom: 25px;
   animation: fadeUp 0.8s both;
 }
@@ -1131,6 +1132,13 @@ section {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+  .opening-brand { top: 10px; }
+  .opening-brand.logo-left { left: 10px; }
+  .opening-brand.logo-right { right: 10px; }
+  .opening-brand.logo-left img { height: 42px; }
+  .opening-brand.logo-right img { height: 30px; }
+  .opening-copy { margin-top: 52px; margin-bottom: 15px; }
+  .opening-title { font-size: 2.8rem; }
   .hero-corner-logo { top: 12px; }
   .logo-top-left { left: 12px; }
   .logo-top-right { right: 12px; }
