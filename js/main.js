@@ -138,9 +138,9 @@ function updateAudioUI() {
   }
 }
 
-// 3. CUENTA REGRESIVA (Miércoles 16 de Septiembre de 2026 - 19:00 hs)
+// 3. CUENTA REGRESIVA (Jueves 17 de Septiembre de 2026 - 19:00 hs)
 function initCountdown() {
-  const targetDate = new Date('2026-09-16T19:00:00').getTime();
+  const targetDate = new Date('2026-09-17T19:00:00').getTime();
 
   function updateTimer() {
     const now = new Date().getTime();
